@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>To-Do list</title>
+<style> 
+body{
+  height: 200px;
+  background-color: #cccccc;
+  background-image: linear-gradient(black, grey);
+}
+h1{
+	color:grey;
+}
+</style>
+	</head>
+<body >
+	<h1 align="center" >To-Do List</h1>
+<input type="text" id="te" placeholder="Enter text here">
+<button type="button" id="bt" hover="change()" onclick="add()">
+<img src=1.png width=50ps height=28ps/></button>
+
+<div id="di">
+<ul id="l">
+</ul>
+</div>
+
+
+<script>
+var t=document.getElementById('te')
+var lis=document.getElementById('l')
+
+
+function add()
+{
+  var n=document.createElement('li')
+  var text=t.value
+  var tex=document.createTextNode(text)
+  n.appendChild(tex)
+  var butto=document.createElement('button')
+  butto.innerHTML='Delete'
+    butto.setAttribute('id','cre')
+  n.appendChild(butto)
+  lis.appendChild(n)
+}
+
+
+</script>
+</body>
+</html>
